@@ -1,0 +1,5 @@
+A continuación vamos a construir un formulario de login que 
+nos permita mostrar las ventajas de trabajar con react.  Para ello, crearemos un proyecto 
+de vite donde sustituiremos el archivo App.jsx para que devuelva únicamente nuestro formulario de login. 
+
+Tómate unos momentos para observar la estructura de este formulario. (VER IMÁGENES)

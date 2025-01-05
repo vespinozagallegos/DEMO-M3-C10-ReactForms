@@ -1,0 +1,10 @@
+Vamos a interpretar a los formularios como fragmentos de código que permiten a los usuarios 
+enviar datos a un servidor para su procesamiento.
+
+Está compuesto por una serie de campos 
+(por ejemplo, de texto, desplegables, checkbox, entre muchas otras) 
+los cuales sirven como data-points para la recopilación de información.
+
+
+En este pequeño ejemplo, estamos generando un formulario básico de contacto
+ que es inicializado con la etiqueta <form> e incluye algunos campos para ingresar datos, además de un botón de envío.
