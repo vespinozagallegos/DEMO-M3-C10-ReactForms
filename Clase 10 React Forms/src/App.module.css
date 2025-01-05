@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+  
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  
+    background-color: beige ;
+
+    display: flex;
+    justify-content: center;
+  
+  }
+      
+  .title {
+    font-weight: 600;
+    font-size: x-large;
+    color:darkgreen;
+    display: flex;
+    align-items: center;
+  }
+
+  .subtitle {
+    color: brown;
+  }
