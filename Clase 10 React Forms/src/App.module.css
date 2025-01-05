@@ -13,14 +13,18 @@ body {
   
   }
       
-  .title {
-    font-weight: 600;
-    font-size: x-large;
-    color:darkgreen;
-    display: flex;
-    align-items: center;
-  }
+.container {
+    background-color: darkkhaki;
+    width: 250px;
+    height: 200px;
+    border-radius: 40px;
+    
+    padding: 30px;
+    margin: 30px
+}
 
-  .subtitle {
-    color: brown;
-  }
+h2, div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

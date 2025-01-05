@@ -1,12 +1,11 @@
 import styles from './App.module.css'
-console.log(styles);
 
 
 function App() {
 
   return (
-    <form>
-      <h2>LOGIN</h2>
+    <form className={styles.container}>
+      <h2 >LOGIN</h2>
       <div>
         <label>Username: </label>
         <input />
