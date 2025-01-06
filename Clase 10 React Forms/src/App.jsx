@@ -22,13 +22,16 @@ function App() {
   // !AL BINDEAR el input se recibe un objeto EVENT que se dispara ante cada cambio en el input 
   // Aqui se ve onChange={(event) => handleInputChange(event)}) pero ocuparemos la mas simple onChange={handleInputChange}
   const handleInputChange = (event) => {
-    // para ver que las propiedades estan en target
+    // para ver que las propiedades value y name estan en target:input
     console.log(event);
 
-    // destructuring del objeto event.target.
+    // destructuring del objeto event.target
     const {name, value} = event.target;
     // actualizar el estado
-    setUserData({})
+    setUserData({
+      ...userData,
+      [name]: value
+    });
 
   }
   

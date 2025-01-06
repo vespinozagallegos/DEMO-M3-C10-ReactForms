@@ -1,0 +1,80 @@
+BINDEO INPUT - ESTADO
+
+El estado inicial debe ser igual a los inputs
+
+const [userData, setUserData] = useState({
+    username: "",       <--------
+    password: ""        <--------
+  });
+
+En el input debo llamar estas props (en values)
+input username
+value={userData.username}   <--------
+
+input password
+value={userData.password}   <--------
+
+
+{HASTA AQUI SE ESTRUCTURA}
+SE VE EN "1AppEstructuraBasicaDeFormularioControlado.jsx"
+PERO NO SE PUEDEN LLENAR LOS CAMPOS, falta la funcionalidad
+
+
+BINDEO INPUT-FUNCION
+
+FUNCION
+const handleInputChange = () => {}
+
+Se declara en cada INPUT (de aqui sale EVENT)
+onChange={handleInputChange}                    <--------(OPCION1 mas usada)
+onChange={(event) => handleInputChange(event)}  <--------(OPCION2 de aqui sale event) {Ambas funciones dan mismo result.}
+
+Luego en la FUNCION agrego event                {este se dispara ante cualquier cambio en el campo del input}
+const handleInputChange = (event) => {}
+
+
+
+Ahora PARA MANIPULAR los inputs desde la funcion
+
+ const handleInputChange = (event) => {
+    const {name, value} = event.target;
+  }
+
+EVENT es un gran objeto con la propiedad target que contiene name y value (entre otros)
+por eso el destructuring
+const {name, value} = event.target;
+
+Para acceder a ellos sería 
+event.target.name
+event.target.value
+
+
+
+ACTUALIZAR ESTADO
+
+hay dos opciones:
+
+1
+if (name === "username") {
+    setUserData({
+        ...userData,
+        username: value
+    })
+}
+
+if (name === "password") {
+    setUserData({
+        ...userData,            <--------Copia lo anterior
+        password: value         <--------Reemplaza password por value, value es lo que se esta escribiendo
+    })
+}
+
+pero para no tener que agregar esta estructura por cada input
+2
+setUserData({
+    ...userData,                <--------Copia lo anterior
+    [name]: value               <--------EN objetos si no conozco el valor de su prop se puede utilizar []
+});                             <--------entonces decimos modifica name(si es username o password) y que sea value
+                                <--------[name]: value ---> si name es password o username, que sea value
+
+
