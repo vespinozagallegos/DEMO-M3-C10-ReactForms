@@ -8,6 +8,13 @@ function App() {
     username: "",
     password: ""
   });
+  console.log(userData);
+  
+  // Se agrega funcionalidad a los inputs(sin esto no se puede escribir en ellos)
+  // Cada caracter que se ingrese, actualizara el valor del input y se debe guardar
+  const handleInputChange = () => {
+
+  }
   
   // *Al trabajar con estados controlados se debe enlazar el estado de React con el valor de los inputs 
   // !Porque EL ESTADO debe ser IGUAL al value del input (USERNAME Y PASSWORD)
@@ -27,7 +34,10 @@ function App() {
         // El name de input nos indicará DONDE estará ESCRIBIENDO EL usuario
         name='username'
         // letra en gris que sirve de ejemplo
-        placeholder='example@gmail.com'        
+        placeholder='example@gmail.com'
+        // !Bindeo de la funcion con el input
+        onChange={handleInputChange}
+
         />
       </div>
       
@@ -39,6 +49,8 @@ function App() {
         value={userData.password}
         name='password'
         placeholder='**********'
+        // Bindeo de la funcion con el input
+        onChange={handleInputChange}
         />
       </div>
       <button>Submit</button>

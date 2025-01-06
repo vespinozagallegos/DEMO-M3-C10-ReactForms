@@ -47,3 +47,6 @@ function App() {
 }
 
 export default App;
+
+
+// proximo archivo. Formulario controlado con funcionalidad
