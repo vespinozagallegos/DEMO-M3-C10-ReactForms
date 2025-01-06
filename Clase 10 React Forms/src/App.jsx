@@ -12,7 +12,8 @@ function App() {
   
   // Se agrega funcionalidad a los inputs(sin esto no se puede escribir en ellos)
   // Cada caracter que se ingrese, actualizara el valor del input y se debe guardar
-  const handleInputChange = () => {
+  //AL BINDEAR el input se recibe un objeto EVENT que se dispara ante cada cambio en el input
+  const handleInputChange = (event) => {
 
   }
   
@@ -35,7 +36,7 @@ function App() {
         name='username'
         // letra en gris que sirve de ejemplo
         placeholder='example@gmail.com'
-        // !Bindeo de la funcion con el input
+        // !Bindeo de la funcion con el input (OPCION 2 --> onChange={(event) => handleInputChange(event)}) son lo mismo
         onChange={handleInputChange}
 
         />
