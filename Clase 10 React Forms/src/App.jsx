@@ -32,11 +32,20 @@ function App() {
       ...userData,
       [name]: value
     });
+  }
 
+  // Funcionalidad de Botón Submit. Manejador del Evento Submit
+  // Al hacerle click tambien se recibe el objeto event, por eso lo agregamos aqui
+  const handleOnSubmit = (event) => {
+    // evita que se vuelva a recargar TODA la pagina con el click
+    event.preventDefault();
+    // La info va al Back pero aqui la tiramos a una ALERT para visualizar la info
+    alert(`Username: ${userData.username} Password: ${userData.password}`);
   }
   
   return (
-    <form className={styles.container}>
+    // la funcion NO VA Al BOTón va en Form porque se submitea el FORMULARIO no un BOTON
+    <form onSubmit={handleOnSubmit} className={styles.container}>
       <h2 >LOGIN</h2>
       
       <div>
