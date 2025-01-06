@@ -3,3 +3,11 @@ Pueden ir:
 - A TIEMPO REAL. Cuando se actualiza el estado que es --> Cada vez que el usuario escribe en el input
 
 Y la forma CORRECTA es cuando se está escribiendo --> entrega mejor experiencia de usuario, le ahorra tiempo
+
+-Se crea un helper validate.js con una función
+-se importa en la App
+-se llama la función validate dentro de handleInputChange
+
+-Se crea un nuevo ESTADO en App.
+
+
