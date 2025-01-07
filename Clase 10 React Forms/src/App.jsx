@@ -81,6 +81,8 @@ function App() {
         onChange={handleInputChange}
 
         />
+        {/* agregar una lógica para que el msje solo aparezca luego de hacer click en submit y el campo está vacío */}
+        {errors.username && <p className={styles.errorMessage} > {errors.username} </p>}
       </div>
       
       <div>
@@ -94,6 +96,7 @@ function App() {
         // !Bindeo de la funcion con el input
         onChange={handleInputChange}
         />
+        {errors.password && <p className={styles.errorMessage}> {errors.password} </p>} 
       </div>
       <button>Submit</button>
     </form>
