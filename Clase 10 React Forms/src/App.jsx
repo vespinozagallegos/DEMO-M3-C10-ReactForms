@@ -44,7 +44,7 @@ function App() {
 
     // ?Se llama a la función validate
     // *errors pq validate devuelve errors
-    // el input que recibe la función, aquí sera el ESTADO
+    // el input que recibe la función, en el modulo Validate --export const validate = (input)-- aquí sera el ESTADO
     // en el modulo de la funcion se manejarán los datos de los inputs que trae el Estado
     const errors = validate(userData);
     // se setea/actualiza el ESTADO errors con el return de la función validate {}
