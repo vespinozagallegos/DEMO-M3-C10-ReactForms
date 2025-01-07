@@ -17,3 +17,10 @@ Y la forma CORRECTA es cuando se está escribiendo --> entrega mejor experiencia
     })
 -Estas propiedades serán requeridas en el modulo de validaciones
     en el objeto const errors = {};
+
+-El llamado de la funcion validate dentro de handleInputChange tiene 2 opciones de igual resultado
+    1
+    const errors = validate(userData);
+    setErrors(errors);
+    2 (mas corta)
+    setErrors(validate(userData));

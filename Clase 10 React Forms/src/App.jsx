@@ -47,8 +47,9 @@ function App() {
     // el input que recibe la función, aquí sera el ESTADO
     // en el modulo de la funcion se manejarán los datos de los inputs que trae el Estado
     const errors = validate(userData);
-    // se setea el ESTADO errors con el valor de la función validate
+    // se setea/actualiza el ESTADO errors con el return de la función validate {}
     setErrors(errors);
+    // ?Opcion 2 mas corta setErrors(validate(userData));
 
   }
 
