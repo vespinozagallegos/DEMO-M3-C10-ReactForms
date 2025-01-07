@@ -14,8 +14,16 @@ function App() {
     username: "",
     password: ""
   });
-  console.log(userData);
+  // console.log(userData);
 
+  // ?Se crea el ESTADO para las validaciones
+  // *las propiedades del objeto tendrán un valor inicial (string) 
+  const [errors, setErrors] = useState({
+    username: "Username is requerid",
+    password: "Password is requerid"
+  })
+  console.log(errors);
+  
 
   
   // Esta funcion agrega funcionalidad a los inputs(sin esto no se puede escribir en ellos) SE BINDEA con onChange={handleInputChange}
@@ -24,7 +32,7 @@ function App() {
   // Aqui se ve onChange={(event) => handleInputChange(event)}) pero ocuparemos la mas simple onChange={handleInputChange}
   const handleInputChange = (event) => {
     // para ver que las propiedades value y name estan en target:input
-    console.log(event);
+    // console.log(event);
 
     // destructuring del objeto event.target
     const {name, value} = event.target;
@@ -34,11 +42,13 @@ function App() {
       [name]: value
     });
 
-    // Se llama a la función validate (será una Validacion del formulario EN TIEMPO REAL)
-    // errors pq validate devuelve errors
+    // ?Se llama a la función validate
+    // *errors pq validate devuelve errors
     // el input que recibe la función, aquí sera el ESTADO
     // en el modulo de la funcion se manejarán los datos de los inputs que trae el Estado
     const errors = validate(userData);
+    // se setea el ESTADO errors con el valor de la función validate
+    setErrors(errors);
 
   }
 

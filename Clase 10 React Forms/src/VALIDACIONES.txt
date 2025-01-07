@@ -10,6 +10,10 @@ Y la forma CORRECTA es cuando se está escribiendo --> entrega mejor experiencia
     -agregando userData para disponer de esos datos (luego) en el modulo validate
     const errors = validate(userData);
 
--Se crea un nuevo ESTADO en App.
-
-
+-Se crea un nuevo ESTADO en App. para las validaciones 
+    const [errors, setErrors] = useState({
+    username: "Username is requerid",
+    password: "Password is requerid"
+    })
+-Estas propiedades serán requeridas en el modulo de validaciones
+    en el objeto const errors = {};
