@@ -7,6 +7,7 @@ Y la forma CORRECTA es cuando se está escribiendo --> entrega mejor experiencia
 -Se crea un helper validate.js con una función (.js porque se crea una función, no un Componente)
 -se importa en la App
 -se llama la función validate dentro de handleInputChange
+    const errors = validate(userData);
 
 -Se crea un nuevo ESTADO en App.
 

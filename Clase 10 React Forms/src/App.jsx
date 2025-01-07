@@ -1,5 +1,6 @@
 import styles from './App.module.css'
 import { useState } from 'react';
+import { validate } from './helpers/validate';
 
 function App() {
   // Guarda info que el usuario va cargando en los inputs
@@ -32,6 +33,13 @@ function App() {
       ...userData,
       [name]: value
     });
+
+    // Se llama a la función validate (será una Validacion del formulario EN TIEMPO REAL)
+    // errors pq validate devuelve errors
+    // el input que recibe la función, aquí sera el ESTADO
+    // en el modulo de la funcion se manejarán los datos de los inputs que trae el Estado
+    const errors = validate(userData);
+
   }
 
   // Funcionalidad de Botón Submit. Manejador del Evento Submit
