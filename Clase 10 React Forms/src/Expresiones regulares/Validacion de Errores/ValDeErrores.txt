@@ -1,0 +1,26 @@
+En el siguiente ejemplo vamos a construir una función de JavaScript 
+en la que validaremos si lo que recibimos es realmente un correo electrónico.
+
+Para esto utilizaremos un condicional y el método test nativo del lenguaje. 
+En caso de no cumplirse la validación agregará "error" al objeto de errores con el mensaje "username is invalid".
+
+VER IMAGEN validacion de error.png
+
+Ahora solo resta controlar que, si hay errores, 
+el usuario no pueda enviar la información del formulario (lógico, ¿verdad?).
+La forma más sencilla de hacerlo es generar una condición dentro de una 
+función submitHandler() que evalúe el estado errores.
+
+VER IMAGEN validacion de error2.png
+
+
+
+En esta lección trabajamos un formulario 
+con dos inputs, pero, ¿qué sucedería si tuviéramos, 
+en su lugar, unos diez o más campos? Sería un poco 
+difícil y extenso definir el código para controlarlos.
+
+✨Para trabajar con formularios complejos lo más 
+frecuente es la incorporación de librerías que, a 
+pesar de trabajar con la misma lógica, simplifican 
+mucho la creación de código. 

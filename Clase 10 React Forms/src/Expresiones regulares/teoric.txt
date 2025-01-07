@@ -1,0 +1,16 @@
+Expresiones regulares
+
+Las expresiones regulares (regex) son patrones de búsqueda que 
+permiten encontrar y manipular cadenas de texto. Se utilizan para 
+validar, buscar y manipular datos en texto de manera eficiente.
+
+Para hacernos a una mejor idea de esto, supongamos que recibes 
+una lista de contactos y deseas validar que todos los teléfonos 
+realmente sean números y no texto. Con una expresión regular, puedes buscar un patrón específico.
+
+VER IMG regex
+
+Aplicando esta expresión regular a la lista, te mostrará los números 
+de teléfono que sigan este patrón. Existen formas de crear patrones de 
+manera manual, pero es más frecuente el uso de patrones previamente diseñados 
+que pueden ser encontrados en diversas páginas de internet o haciendo uso de inteligencia artificial.
