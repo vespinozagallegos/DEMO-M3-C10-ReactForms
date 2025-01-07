@@ -1,10 +1,10 @@
-Pueden ir: 
+Las Validaciones se pueden hacer: 
 - al hacer click en el boton submit
 - A TIEMPO REAL. Cuando se actualiza el estado que es --> Cada vez que el usuario escribe en el input
 
 Y la forma CORRECTA es cuando se está escribiendo --> entrega mejor experiencia de usuario, le ahorra tiempo
 
--Se crea un helper validate.js con una función
+-Se crea un helper validate.js con una función (.js porque se crea una función, no un Componente)
 -se importa en la App
 -se llama la función validate dentro de handleInputChange
 
